@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="미생물학, 바이오인포매틱스, 헬스케어 AI 분야를 연구하는 정현우의 이력서"
+  >
+  <title>정현우 | Bio-AI 이력서</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- External CSS: Bootstrap 다음에 연결해야 사용자 스타일이 우선 적용됩니다. -->
+  <link rel="stylesheet" href="resume_style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#resumeNavbar" data-bs-offset="80">
+  <!-- 반응형 내비게이션 -->
+  <nav id="resumeNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">HJ<span class="brand-dot">.</span>RESUME</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="메뉴 열기"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">학력</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">연구</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">프로젝트</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publication">논문</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">연락</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 프로필 Hero -->
+  <header id="top" class="hero-section">
+    <div class="container py-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-md-4 col-lg-3 text-center">
+          <img
+            class="profile-image img-fluid"
+            src="profile.jpg"
+            alt="정현우 프로필 사진"
+            width="240"
+            height="240"
+          >
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9 text-center text-md-start">
+          <p class="eyebrow mb-2">Microbiology · Bioinformatics · Healthcare AI</p>
+          <h1 class="display-3 fw-bold mb-2">
+            정현우 <span class="english-name">Hyunwoo Jung</span>
+          </h1>
+          <p class="lead fw-semibold mb-3">Bio-AI Researcher &amp; Data Analyst</p>
+          <p class="hero-copy mb-4">
+            미생물학 연구 경험을 바탕으로 바이오 데이터를 해석하고,
+            머신러닝과 AI 기반 개발 도구를 활용해 문제를 해결합니다.
+            생물학적 의미와 데이터 기반 의사결정을 연결하는 연구자를 목표로 합니다.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+            <a
+              class="btn btn-light rounded-pill px-4"
+              href="https://github.com/ceohwj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub</a>
+            <a
+              class="btn btn-outline-light rounded-pill px-4"
+              href="https://velog.io/@ceohwj/series"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Velog</a>
+            <a class="btn btn-outline-light rounded-pill px-4" href="mailto:ceohwj48@gmail.com">
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <!-- 왼쪽 정보 영역 -->
+      <aside class="col-12 col-lg-4">
+        <div class="sidebar-stack">
+          <section class="card resume-card" aria-labelledby="information-title">
+            <div class="card-body p-4">
+              <div class="section-title">
+                <span>01</span>
+                <h2 id="information-title">기본 정보</h2>
+              </div>
+              <hr>
+
+              <ul class="information-list">
+                <li>
+                  <strong>이름</strong>
+                  <span>정현우 · Hyunwoo Jung</span>
+                </li>
+                <li>
+                  <strong>거주지</strong>
+                  <span>서울, 대한민국</span>
+                </li>
+                <li>
+                  <strong>이메일</strong>
+                  <a href="mailto:ceohwj48@gmail.com">ceohwj48@gmail.com</a>
+                </li>
+                <li>
+                  <strong>전공</strong>
+                  <span>미생물학</span>
+                </li>
+                <li>
+                  <strong>희망 분야</strong>
+                  <span>Bio-AI · Healthcare AI</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card resume-card" aria-labelledby="skills-title">
+            <div class="card-body p-4">
+              <div class="section-title">
+                <span>02</span>
+                <h2 id="skills-title">보유 기술</h2>
+              </div>
+              <hr>
+
+              <div class="skill-group">
+                <h3>Data Analysis</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge skill-badge">Python</span>
+                  <span class="badge skill-badge">Pandas</span>
+                  <span class="badge skill-badge">NumPy</span>
+                  <span class="badge skill-badge">Seaborn</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Machine Learning</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge skill-badge">Scikit-learn</span>
+                  <span class="badge skill-badge">CatBoost</span>
+                  <span class="badge skill-badge">XGBoost</span>
+                  <span class="badge skill-badge">LightGBM</span>
+                  <span class="badge skill-badge">SHAP</span>
+                </div>
+              </div>
+
+              <div class="skill-group mb-0">
+                <h3>Bioinformatics</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge skill-badge">Genome Analysis</span>
+                  <span class="badge skill-badge">Comparative Genomics</span>
+                  <span class="badge skill-badge">Phylogeny</span>
+                  <span class="badge skill-badge">KEGG</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card resume-card" aria-labelledby="interests-title">
+            <div class="card-body p-4">
+              <div class="section-title">
+                <span>03</span>
+                <h2 id="interests-title">관심 분야</h2>
+              </div>
+              <hr>
+
+              <ol class="interest-list" type="i">
+                <li>미생물 유전체 분석</li>
+                <li>바이오인포매틱스</li>
+                <li>Healthcare Machine Learning</li>
+                <li>설명 가능한 인공지능</li>
+                <li>AI 기반 연구 자동화</li>
+              </ol>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <!-- 오른쪽 주요 이력 영역 -->
+      <div class="col-12 col-lg-8">
+        <div class="content-stack">
+          <section id="about" class="card resume-card accent-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>04</span>
+                <h2>자기소개</h2>
+              </div>
+              <hr>
+
+              <p class="mb-3">
+                미생물학, 유전체 분석, 미생물 분류 및 생리·생화학 실험 경험을
+                바탕으로 바이오 데이터가 가진 생물학적 의미를 해석할 수 있습니다.
+              </p>
+              <p class="mb-0">
+                Python 기반 데이터 분석, feature engineering, cross validation,
+                ensemble modeling 및 SHAP 분석을 활용해 실제 헬스케어 데이터 문제를
+                예측 모델과 설명 가능한 결과로 연결하고 있습니다.
+              </p>
+            </div>
+          </section>
+
+          <section id="education" class="card resume-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>05</span>
+                <h2>학력</h2>
+              </div>
+              <hr>
+
+              <div class="table-responsive rounded-3 border">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">학교</th>
+                      <th scope="col">소속</th>
+                      <th scope="col">전공</th>
+                      <th scope="col">학위</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-semibold">중앙대학교</td>
+                      <td>의과대학 대학원</td>
+                      <td>미생물학</td>
+                      <td>의과학 석사</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="thesis-box mt-4">
+                <p class="item-label mb-1">MASTER'S THESIS</p>
+                <h3 class="h6 mb-0">
+                  Genomic and functional analysis of 1,2-dichloroethane
+                  degradation pathway in <i>Roseovarius</i> sp. CAU 1744ᵀ
+                </h3>
+              </div>
+            </div>
+          </section>
+
+          <section id="research" class="card resume-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>06</span>
+                <h2>연구 경험</h2>
+              </div>
+              <hr>
+
+              <div class="research-timeline">
+                <article class="timeline-item">
+                  <p class="item-label">MICROBIOLOGY · GENOME ANALYSIS</p>
+                  <h3><i>Roseovarius</i> sp. CAU 1744ᵀ 유전체 분석</h3>
+                  <p>
+                    신종 해양 미생물의 분류학적 신규성과 1,2-dichloroethane
+                    분해 가능성을 유전체 및 실험적으로 분석했습니다.
+                  </p>
+                  <ul>
+                    <li>16S rRNA 및 UBCG 기반 계통 분석</li>
+                    <li>ANI, AAI, dDDH 및 비교유전체 분석</li>
+                    <li>KEGG pathway 분석, PCR 검증 및 생리 실험</li>
+                  </ul>
+                </article>
+
+                <article class="timeline-item">
+                  <p class="item-label">IN VIVO · GUT-LIVER AXIS</p>
+                  <h3>유산균 유래 간 보호 후보소재 연구</h3>
+                  <p>
+                    급성 알코올성 간 손상 모델에서 유산균 유래 후보소재의
+                    간 보호 및 장-간 축 조절 가능성을 분석했습니다.
+                  </p>
+                  <ul>
+                    <li>동물실험 설계 및 비교군 구성</li>
+                    <li>qPCR 및 혈청 생화학 결과 해석</li>
+                    <li>SCFA와 장 장벽 지표를 연결한 기전 해석</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="card resume-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>07</span>
+                <h2>프로젝트</h2>
+              </div>
+              <hr>
+
+              <div class="table-responsive rounded-3 border">
+                <table class="table table-striped table-hover align-middle mb-0 project-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">프로젝트</th>
+                      <th scope="col">역할 및 기술</th>
+                      <th scope="col">성과</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-semibold">불임 치료 임신 성공 여부 예측</td>
+                      <td>
+                        ML Engineer · Feature Engineer<br>
+                        <small>CatBoost, XGBoost, LightGBM, SHAP, Optuna</small>
+                      </td>
+                      <td>
+                        <span class="badge achievement-badge">해커톤 3위</span>
+                        <p class="small mb-0 mt-2">Public LB AUC 0.742+</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fw-semibold">Bio-AI Technical Writing</td>
+                      <td>
+                        기술 콘텐츠 작성<br>
+                        <small>Machine Learning, PyTorch, SHAP</small>
+                      </td>
+                      <td>Bio-AI 기술 블로그 구축</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section id="publication" class="card resume-card publication-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>08</span>
+                <h2>논문</h2>
+              </div>
+              <hr>
+
+              <p class="item-label">CURRENT MICROBIOLOGY · 2026</p>
+              <h3 class="h5 lh-base">
+                Description of <i>Albimonas marina</i> sp. nov., isolated from
+                sea sand on the Yellow Sea Coast
+              </h3>
+              <p class="mb-3">공동 제1저자 · 제1표기 저자</p>
+              <a
+                class="btn btn-brand"
+                href="https://link.springer.com/article/10.1007/s00284-025-04587-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >논문 확인하기</a>
+            </div>
+          </section>
+
+          <section id="contact" class="card resume-card contact-card">
+            <div class="card-body p-4 p-md-5">
+              <div class="section-title">
+                <span>09</span>
+                <h2>이력서 보내기</h2>
+              </div>
+              <hr>
+
+              <p class="text-secondary">
+                담당자 이메일과 회사명을 입력한 뒤 전송 버튼을 눌러주세요.
+              </p>
+
+              <form action="#" method="post" class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label class="form-label fw-semibold" for="emailInput">담당자 이메일</label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="emailInput"
+                    name="email"
+                    type="email"
+                    placeholder="email@example.com"
+                    required
+                  >
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label class="form-label fw-semibold" for="companyInput">회사명</label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="companyInput"
+                    name="company"
+                    type="text"
+                    placeholder="(주)회사명"
+                    required
+                  >
+                </div>
+
+                <div class="col-12 d-grid d-sm-flex justify-content-sm-end">
+                  <button class="btn btn-brand btn-lg px-4" type="submit">
+                    이력서 전송하기
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2026 Hyunwoo Jung · Bio-AI Resume</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript: 모바일 내비게이션 동작에 사용됩니다. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

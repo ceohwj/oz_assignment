@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap");
+
+:root {
+  --resume-primary: #0f766e;
+  --resume-primary-dark: #064e49;
+  --resume-primary-soft: #dff3ef;
+  --resume-background: #edf4f2;
+  --resume-surface: #ffffff;
+  --resume-text: #172522;
+  --resume-muted: #60716d;
+  --resume-line: #d4e1de;
+  --resume-shadow: 0 16px 44px rgba(27, 71, 64, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(15, 118, 110, 0.12), transparent 28rem),
+    var(--resume-background);
+  color: var(--resume-text);
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--resume-primary-dark);
+  text-underline-offset: 3px;
+}
+
+/* Bootstrap 내비게이션 사용자 정의 */
+.navbar {
+  background: rgba(6, 78, 73, 0.96);
+  backdrop-filter: blur(14px);
+}
+
+.navbar-brand {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.brand-dot {
+  color: #7ee3d5;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff;
+}
+
+.navbar .nav-link.active::after {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.25rem;
+  left: 0.5rem;
+  height: 2px;
+  background: #7ee3d5;
+  border-radius: 999px;
+  content: "";
+}
+
+/* 프로필 Hero */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(4, 47, 46, 0.98), rgba(15, 118, 110, 0.92)),
+    var(--resume-primary-dark);
+  color: #ffffff;
+}
+
+.hero-section::before,
+.hero-section::after {
+  position: absolute;
+  border: 1px solid rgba(126, 227, 213, 0.14);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.hero-section::before {
+  top: -220px;
+  right: -130px;
+  width: 520px;
+  height: 520px;
+}
+
+.hero-section::after {
+  right: 100px;
+  bottom: -220px;
+  width: 360px;
+  height: 360px;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image {
+  width: min(240px, 70vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--resume-primary-soft);
+  border: 6px solid rgba(255, 255, 255, 0.86);
+  border-radius: 28px;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.24);
+}
+
+.eyebrow,
+.item-label {
+  color: #8ceadd;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  font-family: "Space Grotesk", "Noto Sans KR", sans-serif;
+  letter-spacing: -0.045em;
+}
+
+.english-name {
+  display: block;
+  margin-top: 0.35rem;
+  color: #b9eee7;
+  font-size: 0.42em;
+  letter-spacing: 0;
+}
+
+.hero-copy {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.hero-section .btn {
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Bootstrap 카드 및 공통 섹션 */
+.sidebar-stack,
+.content-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.resume-card {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--resume-line);
+  border-radius: 1.15rem;
+  box-shadow: var(--resume-shadow);
+}
+
+.resume-card[id] {
+  scroll-margin-top: 88px;
+}
+
+.accent-card {
+  border-top: 5px solid var(--resume-primary);
+}
+
+.section-title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.section-title > span {
+  color: var(--resume-primary);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.resume-card hr {
+  height: 1px;
+  margin: 0.85rem 0 1.5rem;
+  background: linear-gradient(90deg, var(--resume-primary), var(--resume-line), transparent);
+  border: 0;
+  opacity: 1;
+}
+
+/* 기본 정보 */
+.information-list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.information-list li {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dashed var(--resume-line);
+}
+
+.information-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.information-list strong,
+.information-list span,
+.information-list a {
+  display: block;
+}
+
+.information-list strong {
+  margin-bottom: 0.15rem;
+  color: var(--resume-primary-dark);
+  font-size: 0.8rem;
+}
+
+.information-list span,
+.information-list a {
+  color: var(--resume-muted);
+  overflow-wrap: anywhere;
+}
+
+/* 기술 배지 */
+.skill-group {
+  margin-bottom: 1.45rem;
+}
+
+.skill-group h3 {
+  margin-bottom: 0.65rem;
+  color: var(--resume-primary-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.skill-badge {
+  padding: 0.55rem 0.72rem;
+  background: var(--resume-primary-soft);
+  color: var(--resume-primary-dark);
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  font-weight: 600;
+}
+
+.interest-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.interest-list li {
+  padding-left: 0.35rem;
+  color: var(--resume-muted);
+}
+
+.interest-list li::marker {
+  color: var(--resume-primary);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+/* Bootstrap 표 사용자 정의 */
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-hover-bg: #f0f8f6;
+  --bs-table-striped-bg: #f7faf9;
+  color: var(--resume-text);
+}
+
+.table thead th {
+  padding: 0.9rem 1rem;
+  background: var(--resume-primary-soft);
+  color: var(--resume-primary-dark);
+  border-bottom: 1px solid var(--resume-line);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  min-width: 130px;
+  padding: 1rem;
+  color: #40514d;
+  border-color: var(--resume-line);
+}
+
+.project-table tbody td:first-child {
+  min-width: 205px;
+}
+
+.project-table tbody td:nth-child(2) {
+  min-width: 245px;
+}
+
+.achievement-badge {
+  padding: 0.55rem 0.7rem;
+  background: #fff0c7;
+  color: #7a5300;
+  border: 1px solid #f0d680;
+}
+
+.thesis-box {
+  padding: 1rem 1.1rem;
+  background: #f4f9f8;
+  border: 1px solid var(--resume-line);
+  border-left: 4px solid var(--resume-primary);
+  border-radius: 0.8rem;
+}
+
+.thesis-box .item-label,
+.publication-card .item-label {
+  color: var(--resume-primary);
+}
+
+/* 연구 타임라인 */
+.research-timeline {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding-left: 1.5rem;
+}
+
+.research-timeline::before {
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 0.28rem;
+  width: 2px;
+  background: var(--resume-line);
+  content: "";
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  position: absolute;
+  top: 0.35rem;
+  left: -1.55rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: var(--resume-primary);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--resume-primary);
+  content: "";
+}
+
+.timeline-item h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.timeline-item p:not(.item-label),
+.timeline-item li {
+  color: var(--resume-muted);
+}
+
+.timeline-item ul {
+  margin-bottom: 0;
+}
+
+/* 버튼과 폼 */
+.btn-brand {
+  background: var(--resume-primary);
+  color: #ffffff;
+  border: 1px solid var(--resume-primary);
+  font-weight: 700;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background: var(--resume-primary-dark);
+  color: #ffffff;
+  border-color: var(--resume-primary-dark);
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #ffffff, #eef8f6);
+}
+
+.form-control {
+  border-color: #b8cbc7;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--resume-primary);
+  box-shadow: 0 0 0 0.25rem rgba(15, 118, 110, 0.13);
+}
+
+footer {
+  background: #0a302c;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.88rem;
+}
+
+/* 태블릿 이하 */
+@media (max-width: 991.98px) {
+  .navbar .nav-link.active::after {
+    display: none;
+  }
+
+  .sidebar-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar-stack .resume-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 767.98px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  .hero-section .container {
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2.45rem, 13vw, 4rem);
+  }
+
+  .profile-image {
+    width: 180px;
+    border-radius: 50%;
+  }
+
+  .sidebar-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-stack .resume-card:last-child {
+    grid-column: auto;
+  }
+
+  .resume-card {
+    border-radius: 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* 작은 모바일 */
+@media (max-width: 399.98px) {
+  main.container {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .resume-card .card-body {
+    padding: 1.25rem !important;
+  }
+
+  .hero-section .btn {
+    width: 100%;
+  }
+}
+
+/* 인쇄용 이력서 */
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 10pt;
+  }
+
+  .navbar,
+  .contact-card,
+  footer {
+    display: none !important;
+  }
+
+  .hero-section {
+    background: var(--resume-primary-dark) !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .hero-section .container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .profile-image {
+    width: 150px;
+  }
+
+  main.container {
+    width: 100%;
+    max-width: none;
+    margin-top: 1rem !important;
+  }
+
+  .sidebar-stack,
+  .content-stack {
+    gap: 0.8rem;
+  }
+
+  .resume-card,
+  .timeline-item,
+  .table-responsive {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .resume-card .card-body {
+    padding: 1rem !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
