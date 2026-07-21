@@ -1,11 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>정현우 이력서</title>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      color: #173b65;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #285a8c;
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #999;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eaf2f8;
+    }
+
+    input {
+      width: 300px;
+      padding: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .form-item {
+      margin-bottom: 15px;
+    }
+
+    .form-item label {
+      display: inline-block;
+      width: 130px;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="contents"></div>
+  <!-- 1. 자기소개 -->
+  <h1>정현우 이력서</h1>
+  <hr>
+
+  <img
+    src="profile.jpg"
+    alt="정현우 프로필 사진"
+    width="200"
+    height="200"
+  >
+
+  <h2>Self Introduction</h2>
+
+  <p>
+    안녕하세요. 미생물학 연구 경험을 바탕으로 바이오 데이터를
+    해석하고, 머신러닝과 인공지능을 활용해 문제를 해결하는
+    Bio-AI 데이터 분석가를 목표로 하는 정현우입니다.
+  </p>
+
+  <p>
+    미생물 유전체 연구, 헬스케어 데이터 분석, 머신러닝 모델링,
+    설명 가능한 인공지능 분야에 관심이 있습니다.
+  </p>
+
+  <p>
+    <a href="https://github.com/ceohwj" target="_blank">
+      GitHub Repository 바로가기
+    </a>
+  </p>
+
+  <p>
+    <a href="https://velog.io/@ceohwj/series" target="_blank">
+      기술 블로그 바로가기
+    </a>
+  </p>
+
+  <!-- 2. 기본 정보 -->
+  <h2>Personal Information</h2>
+  <hr>
+
+  <ul style="list-style: square;">
+    <li>이름: 정현우</li>
+    <li>영문 이름: Hyunwoo Jung</li>
+    <li>거주지: 대한민국 서울</li>
+    <li>이메일: ceohwj48@gmail.com</li>
+    <li>전공 분야: 미생물학</li>
+    <li>희망 분야: Bio-AI 및 Healthcare AI</li>
+  </ul>
+
+  <!-- 3. 학력 -->
+  <h2>Education</h2>
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>학교</th>
+        <th>소속</th>
+        <th>전공</th>
+        <th>학위</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>중앙대학교</td>
+        <td>의과대학 대학원</td>
+        <td>미생물학</td>
+        <td>의과학 석사</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>석사 학위 논문</h3>
+
+  <p>
+    Genomic and functional analysis of 1,2-dichloroethane
+    degradation pathway in Roseovarius sp. CAU 1744ᵀ
+  </p>
+
+  <!-- 4. 연구 경험 -->
+  <h2>Research Experience</h2>
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>연구명</th>
+        <th>주요 내용</th>
+        <th>수행 업무</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Roseovarius sp. CAU 1744ᵀ 유전체 분석</td>
+        <td>
+          신종 해양 미생물의 분류학적 신규성과
+          1,2-dichloroethane 분해 가능성 분석
+        </td>
+        <td>
+          계통 분석, 비교유전체 분석, KEGG 분석,
+          PCR 검증 및 생리 실험
+        </td>
+      </tr>
+
+      <tr>
+        <td>유산균 유래 간 보호 후보소재 연구</td>
+        <td>
+          급성 알코올성 간 손상 모델에서
+          유산균 후보소재의 보호 효과 분석
+        </td>
+        <td>
+          동물실험 설계, qPCR 분석, 혈청 생화학 분석,
+          SCFA 및 장-간 축 결과 해석
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 5. 프로젝트 -->
+  <h2>Project Experience</h2>
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>프로젝트명</th>
+        <th>역할</th>
+        <th>사용 기술</th>
+        <th>성과</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>불임 치료 임신 성공 여부 예측</td>
+        <td>
+          ML 엔지니어, Feature Engineer,
+          Ensemble Designer
+        </td>
+        <td>
+          Python, CatBoost, XGBoost,
+          LightGBM, SHAP, Optuna
+        </td>
+        <td>
+          머신러닝 해커톤 3위<br>
+          Public LB AUC 0.742+
+        </td>
+      </tr>
+
+      <tr>
+        <td>Bio-AI 기술 블로그</td>
+        <td>기술 콘텐츠 작성 및 학습 내용 정리</td>
+        <td>
+          Machine Learning, PyTorch,
+          SHAP, Data Analysis
+        </td>
+        <td>
+          Bio-AI와 데이터 분석 중심의
+          기술 콘텐츠 구축
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 6. 논문 -->
+  <h2>Publication</h2>
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>논문명</th>
+        <th>학술지</th>
+        <th>저자 역할</th>
+        <th>출판 정보</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          Description of Albimonas marina sp. nov.,
+          isolated from sea sand on the Yellow Sea Coast
+        </td>
+        <td>Current Microbiology</td>
+        <td>공동 제1저자 및 제1표기 저자</td>
+        <td>Volume 83, Article 20, 2026</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 7. 보유 기술 -->
+  <h2>Technical Skills</h2>
+  <hr>
+
+  <ul>
+    <li>
+      데이터 분석:
+      Python, Pandas, NumPy, Matplotlib, Seaborn
+    </li>
+
+    <li>
+      머신러닝:
+      Scikit-learn, CatBoost, XGBoost, LightGBM
+    </li>
+
+    <li>
+      모델 평가 및 해석:
+      Cross Validation, AUC, SHAP, Feature Importance
+    </li>
+
+    <li>
+      바이오인포매틱스:
+      Genome Annotation, Comparative Genomics,
+      Phylogenetic Analysis, KEGG Pathway Analysis
+    </li>
+
+    <li>
+      개발 및 협업:
+      Git, GitHub, Next.js, React, Vercel
+    </li>
+  </ul>
+
+  <!-- 8. 관심 분야 -->
+  <h2>Interests & Goals</h2>
+  <hr>
+
+  <ol type="i">
+    <li>미생물학 및 미생물 유전체 분석</li>
+    <li>바이오인포매틱스와 비교유전체학</li>
+    <li>헬스케어 데이터 기반 머신러닝</li>
+    <li>설명 가능한 인공지능과 SHAP 분석</li>
+    <li>AI를 활용한 연구 및 개발 자동화</li>
+  </ol>
+
+  <!-- 9. 메일 발송 폼 -->
+  <h2>Send Cover Letter</h2>
+  <hr>
+
+  <form action="#" method="post">
+    <div class="form-item">
+      <label for="emailInput">담당자 이메일</label>
+
+      <input
+        id="emailInput"
+        name="email"
+        type="email"
+        placeholder="email@example.com"
+        required
+      >
+    </div>
+
+    <div class="form-item">
+      <label for="companyInput">회사명</label>
+
+      <input
+        id="companyInput"
+        name="company"
+        type="text"
+        placeholder="(주)회사명"
+        required
+      >
+    </div>
+
+    <button type="submit">이력서 전송하기</button>
+  </form>
 </body>
 </html>
