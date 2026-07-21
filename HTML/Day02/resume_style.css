@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap");
+
+:root {
+  --background: #eef4f3;
+  --surface: #ffffff;
+  --surface-soft: #f3f8f7;
+  --text: #182321;
+  --muted: #5f6f6b;
+  --primary: #0e766e;
+  --primary-dark: #07584f;
+  --accent: #d9eee9;
+  --line: #cddbd8;
+  --shadow: 0 24px 70px rgba(19, 54, 49, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 48px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(14, 118, 110, 0.16), transparent 28%),
+    var(--background);
+  color: var(--text);
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.resume {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid rgba(14, 118, 110, 0.12);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 36px;
+  align-items: center;
+  padding: 56px;
+  background:
+    linear-gradient(135deg, rgba(6, 66, 60, 0.97), rgba(14, 118, 110, 0.9)),
+    #07584f;
+  color: #ffffff;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  background: #d9eee9;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 28px;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.2);
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 8px;
+  color: #a9e1d8;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 4px;
+  font-family: "Space Grotesk", "Noto Sans KR", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+h1 span {
+  display: block;
+  margin-top: 6px;
+  color: #bdece4;
+  font-size: 0.45em;
+  letter-spacing: 0;
+}
+
+.job-title {
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.introduction {
+  max-width: 720px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-links a {
+  padding: 8px 14px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.profile-links a:hover {
+  background: #ffffff;
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+main {
+  padding: 8px 56px 56px;
+}
+
+.resume-section {
+  padding-top: 48px;
+}
+
+.section-heading {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--primary);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+hr {
+  height: 1px;
+  margin: 14px 0 26px;
+  background: linear-gradient(90deg, var(--primary), var(--line), transparent);
+  border: 0;
+}
+
+.information-list,
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.information-list li,
+.skill-list li {
+  padding: 17px 19px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.information-list strong,
+.information-list span,
+.skill-list strong,
+.skill-list span {
+  display: block;
+}
+
+.information-list strong,
+.skill-list strong {
+  margin-bottom: 4px;
+  color: var(--primary-dark);
+  font-size: 0.86rem;
+}
+
+.information-list span,
+.skill-list span {
+  color: var(--muted);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px 17px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-size: 0.88rem;
+}
+
+td {
+  color: #42514e;
+  font-size: 0.93rem;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:hover td {
+  background: #f8fbfa;
+}
+
+.thesis-card,
+.publication-card {
+  margin-top: 20px;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--surface-soft), #ffffff);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--primary);
+  border-radius: 14px;
+}
+
+.thesis-card h3,
+.publication-card h3 {
+  margin-bottom: 8px;
+}
+
+.thesis-card p,
+.publication-card p {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.publication-card .card-label {
+  color: var(--primary);
+}
+
+.interest-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.interest-list li {
+  padding: 11px 16px;
+  background: var(--surface-soft);
+  border-radius: 10px;
+}
+
+.interest-list li::marker {
+  color: var(--primary);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.contact-section {
+  margin-top: 48px;
+  padding: 36px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.contact-section.resume-section {
+  padding-top: 36px;
+}
+
+.form-description {
+  color: var(--muted);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 16px;
+  align-items: end;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--primary-dark);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 13px;
+  background: #ffffff;
+  border: 1px solid #afc5c1;
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: 3px solid rgba(14, 118, 110, 0.14);
+}
+
+button {
+  min-height: 46px;
+  padding: 10px 20px;
+  background: var(--primary);
+  border: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+footer {
+  padding: 22px 56px;
+  background: #102d29;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 0;
+  }
+
+  .resume {
+    border: 0;
+    border-radius: 0;
+  }
+
+  .profile-header {
+    grid-template-columns: 1fr;
+    padding: 38px 24px;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  main {
+    padding: 0 24px 40px;
+  }
+
+  .information-list,
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 24px;
+  }
+
+  footer {
+    padding: 20px 24px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  body {
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .resume {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .profile-header {
+    background: #07584f;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .resume-section,
+  .thesis-card,
+  .publication-card,
+  table {
+    break-inside: avoid;
+  }
+
+  .contact-section,
+  footer {
+    display: none;
+  }
+}
