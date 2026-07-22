@@ -1,5 +1,14 @@
 # Git & GitHub 정리
 
+## [협업 상황에서 Git & GitHub 사용]
+
+1. 팀장이 project 만들고, `git init`
+2. 탐정아 원격 저장소에 `git push`
+3. 팀원은 `git clone` 으로 팀장의 project를 복사
+4. 팀장 or 팀원이 코드 작업 & `git commit`
+5. 팀장 or 팀원이 `git push`
+6. 다른 팀원은 `git pull`을 해서 코드 동기화
+
 ## 1. GitHub 기초
 
 ### GitHub이란?
@@ -78,9 +87,9 @@ git pull
 Clone은 **원격 저장소를 그대로 내 로컬 컴퓨터로 복사**하는 방식이다.
 
 주로 다음 상황에서 사용한다.
-
+- 아무것도 없는 상태에서 다른 사람의 git을 그대로 이어서 작업할 때 (팀 내부 협업을 할 때)
+- 다른 사람의 git project를 처음 시작할 때 (local에 git repository가 없을때)
 - 같은 저장소에 직접 push 권한이 있을 때
-- 팀 내부 협업을 할 때
 - 회사 또는 팀 프로젝트를 로컬에서 작업할 때
 
 ```bash
